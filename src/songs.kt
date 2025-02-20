@@ -1,14 +1,21 @@
 fun main(){
 val songs:MutableList<String> = mutableListOf("Smoke Sprite",
     "Luther","Miss Understood")
+
     playAll(songs)
+
     addSong("Marilyn Monroe",songs)
     println("Before Shuffle: $songs")
+
     shuffleSongs(songs)
     println("After Shuffle: $songs")
+
     removeSong(songs)
     println("New Playlist: $songs")
+
     findByArtist("DPR Ian", songs)
+
+    showPlaylist(songs)
 
 
 
@@ -34,4 +41,8 @@ fun removeSong(songs:MutableList<String>){
 fun findByArtist(artistName:String, songs:MutableList<String>){
     println("Songs By Artist: $artistName")
 
-        }
+}
+fun showPlaylist(songs: MutableList<String>) {
+    println("Current Playlist: $songs")
+}
+
